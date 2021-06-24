@@ -1,0 +1,10 @@
+{
+  "domain": "baidu_fanyi_tts",
+  "name": "Baidu Translate Text-to-Speech",
+  "version": "0.0.1",
+  "documentation": "https://github.com/al-one/hass-baidu-fanyi-tts",
+  "issue_tracker": "https://github.com/al-one/hass-baidu-fanyi-tts/issues",
+  "requirements": [],
+  "codeowners": [],
+  "iot_class": "cloud_push"
+}
