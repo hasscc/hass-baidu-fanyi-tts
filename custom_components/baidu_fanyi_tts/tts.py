@@ -50,7 +50,7 @@ class BaiduFanyiProvider(Provider):
 
     def __init__(self, hass, config):
         """Init service."""
-        self.name = "Baidu Fanyi TTS"
+        self.name = 'Baidu Fanyi TTS'
         self.hass = hass
         self._config = config or {}
 
@@ -88,7 +88,7 @@ class BaiduFanyiProvider(Provider):
                 )
                 if request.status != HTTP_OK:
                     _LOGGER.error(
-                        "Got error %d on load URL %s", request.status, request.url
+                        'Got error %d on load URL %s', request.status, request.url
                     )
                 data = await request.read()
         except (asyncio.TimeoutError, aiohttp.ClientError) as exc:

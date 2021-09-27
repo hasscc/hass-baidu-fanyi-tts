@@ -9,7 +9,7 @@
 
 ```shell
 # Auto install via terminal shell
-wget -q -O - https://cdn.jsdelivr.net/gh/al-one/hass-xiaomi-miot/install.sh | DOMAIN=baidu_fanyi_tts REPO_PATH=al-one/hass-baidu-fanyi-tts bash -
+wget -q -O - https://cdn.jsdelivr.net/gh/al-one/hass-xiaomi-miot/install.sh | DOMAIN=baidu_fanyi_tts REPO_PATH=hasscc/hass-baidu-fanyi-tts bash -
 ```
 
 
