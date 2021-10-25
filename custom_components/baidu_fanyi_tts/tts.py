@@ -1,11 +1,11 @@
 """Support for the Baidu fanyi speech service."""
+from http import HTTPStatus
 import logging
 import asyncio
 import aiohttp
 import async_timeout
 import voluptuous as vol
 import homeassistant.helpers.config_validation as cv
-from homeassistant.const import HTTP_OK
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.components.tts import CONF_LANG, PLATFORM_SCHEMA, Provider
 
@@ -86,7 +86,7 @@ class BaiduFanyiProvider(Provider):
                     params=params,
                     headers=headers,
                 )
-                if request.status != HTTP_OK:
+                if request.status != HTTPStatus.OK:
                     _LOGGER.error(
                         'Got error %d on load URL %s', request.status, request.url
                     )
