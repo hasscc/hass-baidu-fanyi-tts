@@ -1,10 +1,12 @@
 {
   "domain": "baidu_fanyi_tts",
   "name": "Baidu Fanyi TTS",
-  "version": "0.0.1",
+  "codeowners": ["@hasscc"],
+  "config_flow": true,
   "documentation": "https://github.com/hasscc/hass-baidu-fanyi-tts",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/hasscc/hass-baidu-fanyi-tts/issues",
   "requirements": [],
-  "codeowners": [],
-  "iot_class": "cloud_push"
+  "version": "1.0.0"
 }
