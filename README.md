@@ -37,12 +37,12 @@ config： \
 - `th`  🇹🇭 泰语
 ```
 
-## Using
+## 使用
 
 - [![Call service: tts.speak](https://my.home-assistant.io/badges/developer_call_service.svg)](https://my.home-assistant.io/redirect/developer_call_service/?service=tts.speak)
 - [REST API: /api/tts_get_url](https://www.home-assistant.io/integrations/tts#post-apitts_get_url)
 
-### Basic example
+### 基本示例
 
 ```yaml
 action: tts.speak
@@ -53,7 +53,7 @@ data:
   message: 你好
 ```
 
-### Full example
+### 完整示例
 
 ```yaml
 action: tts.speak
@@ -68,7 +68,7 @@ data:
     speed: 7
 ```
 
-### Curl example
+### Curl 示例
 
 ```shell
 curl -X POST -H "Authorization: Bearer <ACCESS TOKEN>" \
